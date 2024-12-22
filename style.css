@@ -26,7 +26,7 @@ body {
 nav {
   background: #1c1c1c;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1.5rem 1rem;
 }
 
 nav .container {
@@ -196,6 +196,8 @@ nav ul li a:hover {
   color: #4caf50;
   background: hsl(0, 0%, 10%);
 }
+
+
 
 footer {
   background: #1c1c1c;
