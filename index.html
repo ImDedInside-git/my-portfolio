@@ -5,218 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Savio Alphonso - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  line-height: 1.6;
-  color: #e0e0e0;
-  background: linear-gradient(135deg, #6369b3, #004b77, #004b77, #6369b3);
-}
-
-nav {
-  background: #1c1c1c;
-  color: #fff;
-  padding: 1rem 2rem;
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #4caf50;
-}
-
-.section {
-  padding: 3rem 2rem;
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2.2rem;
-  color: #fff;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .card {
-  display: flex;
-  background: rgba(28, 28, 28, 0.8); /* semi-transparent background */
-  padding: 3rem;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-}
-
-#about .card .about-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 2rem;
-  border: 3px solid #4caf50;
-}
-
-#about .card .about-text {
-  flex: 1;
-  text-align: left;
-}
-
-.card {
-  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
-  padding: 1.5rem;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-}
-
-.skills-heading, .projects-heading, .education-heading, .contact-heading {
-  background: rgba(28, 28, 28, 0.8); /* semi-transparent background */
-  padding: 3rem;
-  border-radius: 25px;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-}
-
-.skills-heading h2, .projects-heading h2, .education-heading h2, .contact-heading h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #fff;
-}
-
-#skills .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  justify-items: center;
-}
-
-.skills-card {
-  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
-  padding: 1rem;
-  border-radius: 15px;
-  text-align: center;
-  width: 100%;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-}
-
-#projects .project-card {
-  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
-  padding: 2rem;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #ccc;
-}
-
-.project-card ul {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #ccc;
-}
-
-#contact p {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-#contact .social-icons a {
-  color: #fff;
-  font-size: 2rem;
-  margin: 0 15px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 15px;
-  background: rgba(133, 133, 133, 0.192);
-  transition: color 0.3s, background 0.3s;
-}
-
-#contact .social-icons a:hover {
-  color: #4caf50;
-  background: hsl(0, 0%, 10%);
-}
-
-footer {
-  background: #1c1c1c;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 2rem;
-  margin-top: 3rem;
-}
-
-nav .download-btn {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
-
-nav .download-btn:hover {
-  background-color: #45a049;
-}
-
-nav .download-btn i {
-  margin-right: 8px;
-}
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- tsParticles CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.35.0/tsparticles.min.js"></script>
 </head>
 <body>
+
+  <!-- tsParticles container -->
+  <div id="tsparticles"></div>
+
   <!-- Navbar -->
   <nav>
     <div class="container">
@@ -235,7 +33,7 @@ nav .download-btn i {
   </nav>
 
   <!-- About Section -->
-   <center>
+  <center>
   <section id="about" class="section">
     <div class="container">
       <div class="card">
@@ -249,13 +47,11 @@ nav .download-btn i {
   </section>
   </center>
 
-
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
       <div class="skills-heading">
         <h2>Technical Skills</h2>
-      
       <div class="skills-grid">
         <div class="skills-card">
           <h3>Programming Languages</h3>
@@ -279,7 +75,6 @@ nav .download-btn i {
     <div class="container">
       <div class="projects-heading">
         <h2>Projects</h2>
-      
       <div class="project-card">
         <h3>FalconAirways - MERN Stack Project</h3>
         <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
@@ -315,7 +110,6 @@ nav .download-btn i {
     <div class="container">
       <div class="education-heading">
         <h2>Education</h2>
-      
       <div class="card-wrapper">
         <div class="card">
           <h1>SSLC (CBSE Class 10)</h1>
@@ -347,7 +141,6 @@ nav .download-btn i {
     <div class="container">
       <div class="contact-heading">
         <h2>Contact</h2>
-      
       <center>
         <div class="social-icons">
           <a href="https://github.com/ImDedInside-git" target="_blank"><i class="fab fa-github"></i> Github</a>
@@ -358,9 +151,56 @@ nav .download-btn i {
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Savio Alphonso. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    // tsParticles configuration for the background effect
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: {
+          value: 100, // Number of particles
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        shape: {
+          type: "circle", // Shape of particles
+        },
+        size: {
+          value: 7, // Size of particles
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 1, // Speed of particle movement
+          direction: "none",
+          out_mode: "out",
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+        },
+        line_linked: {
+          enable: true,
+          distance: 200, // Distance between particles to form lines
+          color: "#ffffff", 
+          opacity: 0.2,
+          width: 0.5,
+        },
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse", 
+          },
+        },
+      },
+    });
+  </script>
+
 </body>
 </html>
