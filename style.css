@@ -92,7 +92,9 @@ nav ul li a:hover {
 
 #about .card {
   display: flex;
-  background: rgba(28, 28, 28, 0.5); /* semi-transparent background */
+  align-items: center; /* Vertically center items */
+  gap: 40px; /* Increased spacing between the image and text */
+  background: rgba(28, 28, 28, 0.5); /* Semi-transparent background */
   padding: 3rem;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -100,15 +102,17 @@ nav ul li a:hover {
   backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
-#about .card .about-image {
-  width: 150px;
+.about-image {
+  width: 150px; /* Adjust size as needed */
   height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 2rem;
-  border: 3px solid #4caf50;
-  margin-top: 6%;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image retains proper aspect ratio */
 }
+
+.about-text {
+  flex: 1; /* Ensures the text takes up remaining space */
+}
+
 
 #about .card .about-text {
   flex: 1;
