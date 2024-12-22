@@ -163,11 +163,11 @@
           value: 100, // Number of particles
           density: {
             enable: true,
-            value_area: 700
+            value_area: 400
           }
         },
         shape: {
-          type: "circle", // Shape of particles
+          type: "square", // Shape of particles
         },
         size: {
           value: 7, // Size of particles
@@ -184,7 +184,7 @@
           random: true,
         },
         line_linked: {
-          enable: true,
+          enable: false,
           distance: 150, // Distance between particles to form lines
           color: "#ffffff", 
           opacity: 0.2,
@@ -194,7 +194,7 @@
       interactivity: {
         events: {
           onhover: {
-            enable: true,
+            enable: false,
             mode: "repulse", 
           },
         },
