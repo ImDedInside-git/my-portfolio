@@ -5,6 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
 body {
   line-height: 1.6;
   color: #e0e0e0;
@@ -205,6 +206,7 @@ footer {
   text-align: center;
   padding: 1.5rem 2rem;
   margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 nav .download-btn {
@@ -216,8 +218,7 @@ nav .download-btn {
   cursor: pointer;
   border-radius: 25px;
   display: flex;
-  align-items: center;
-  transition: background-color 0.3s;
+ transition: background-color 0.3s;
   text-decoration: none;
 }
 
