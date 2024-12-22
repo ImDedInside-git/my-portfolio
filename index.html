@@ -53,12 +53,12 @@ nav ul li a:hover {
 }
 
 .section {
-  padding: 3rem 2rem; /* Reduced padding for sections */
+  padding: 3rem 2rem;
 }
 
 .section h2 {
   text-align: center;
-  margin-bottom: 1.5rem; /* Reduced margin below heading */
+  margin-bottom: 1.5rem;
   font-size: 2.2rem;
   color: #fff;
 }
@@ -73,17 +73,16 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0rem;
 }
 
 #about .card {
   display: flex;
-  background: #1c1c1c;
+  background: rgba(28, 28, 28, 0.8); /* semi-transparent background */
   padding: 3rem;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 80%;
-  margin-bottom: 0rem; 
+  backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
 #about .card .about-image {
@@ -101,17 +100,18 @@ nav ul li a:hover {
 }
 
 .card {
-  background: #262626;
+  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
   padding: 1.5rem;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
 .skills-heading, .projects-heading, .education-heading, .contact-heading {
-  background: #1c1c1c;
+  background: rgba(28, 28, 28, 0.8); /* semi-transparent background */
   padding: 3rem;
   border-radius: 25px;
-  margin-bottom: 0rem; /* Reduced margin between section heading and content */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
 .skills-heading h2, .projects-heading h2, .education-heading h2, .contact-heading h2 {
@@ -123,24 +123,26 @@ nav ul li a:hover {
 #skills .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem; /* Reduced gap between skills cards */
+  gap: 1rem;
   justify-items: center;
 }
 
 .skills-card {
-  background: #262626;
-  padding: 1rem; /* Reduced padding inside the skills cards */
+  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
+  padding: 1rem;
   border-radius: 15px;
   text-align: center;
   width: 100%;
+  backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
 #projects .project-card {
-  background: #262626;
+  background: rgba(133, 133, 133, 0.192); /* semi-transparent background */
   padding: 2rem;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem; /* Reduced margin between project cards */
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px); /* Apply the blur effect */
 }
 
 .project-card h3 {
@@ -172,7 +174,7 @@ nav ul li a:hover {
   text-decoration: none;
   padding: 10px;
   border-radius: 15px;
-  background: #262626;
+  background: rgba(133, 133, 133, 0.192);
   transition: color 0.3s, background 0.3s;
 }
 
@@ -210,6 +212,7 @@ nav .download-btn:hover {
 nav .download-btn i {
   margin-right: 8px;
 }
+
 
   </style>
 </head>
