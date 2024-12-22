@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savio Alphonso - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #e0e0e0;
+      background: linear-gradient(135deg, #004e92, #000428);
+    }
+
+    nav {
+      background: #1c1c1c;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4caf50;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    #about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    #about .card {
+      display: flex;
+      background: #1c1c1c;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 80%;
+    }
+
+    #about .card .about-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 2rem;
+      border: 3px solid #4caf50;
+    }
+
+    #about .card .about-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .card {
+      background: #262626;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .skills-heading, .projects-heading, .education-heading, .contact-heading {
+      background: #1c1c1c;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .skills-heading h2, .projects-heading h2, .education-heading h2, .contact-heading h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    #skills .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .skills-card {
+      background: #262626;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      width: 100%;
+    }
+
+    #projects .project-card {
+      background: #262626;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .project-card ul {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #contact .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 8px;
+      background: #262626;
+      transition: color 0.3s, background 0.3s;
+    }
+
+    #contact .social-icons a:hover {
+      color: #4caf50;
+      background: hsl(0, 0%, 10%);
+    }
+
+    footer {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+
+    nav .download-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+
+    nav .download-btn:hover {
+      background-color: #45a049;
+    }
+
+    nav .download-btn i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Savio Alphonso</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" download class="download-btn">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+   <center>
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card">
+        <img src="image.jpg" alt="Savio Alphonso" class="about-image">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi! I'm Savio Alphonso, a student from Hubballi, Karnataka, currently pursuing a Bachelor of Computer Applications (BCA) at KLE Technological University. Passionate about technology, programming, and innovation, I aim to solve real-world problems through my skills in web development, machine learning, and system administration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </center>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="skills-heading">
+        <h2>Technical Skills</h2>
+      
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3>Programming Languages</h3>
+          <p>C, C++, Java, Python, JavaScript</p>
+        </div>
+        <div class="skills-card">
+          <h3>System & Development</h3>
+          <p>Linux System Administration, Front-end UI Design</p>
+        </div>
+        <div class="skills-card">
+          <h3>Tools & Technologies</h3>
+          <p>Selenium, Git, MS Word, MS Excel, Adobe Photoshop</p>
+        </div><br>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="projects-heading">
+        <h2>Projects</h2>
+      
+      <div class="project-card">
+        <h3>FalconAirways - MERN Stack Project</h3>
+        <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
+        <ul>
+          <li>Led development of the front-end and back-end</li>
+          <li>Designed a user-friendly interface</li>
+          <li>Coordinated testing and validation</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Healthcare Monitoring System - Machine Learning</h3>
+        <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
+        <ul>
+          <li>Implemented machine learning models for health risk prediction</li>
+          <li>Integrated personalized health tracking features</li>
+          <li>Coordinated testing and validation</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Vision Health Enhancement - Predictive Analytics</h3>
+        <p><strong>Duration:</strong> Ongoing</p>
+        <ul>
+          <li>Developing a model using Random Forest and Decision Tree algorithms</li>
+          <li>Providing personalized eye care recommendations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="education-heading">
+        <h2>Education</h2>
+      
+      <div class="card-wrapper">
+        <div class="card">
+          <h1>SSLC (CBSE Class 10)</h1>
+          <p><strong>School:</strong> The Indian School, Kingdom of Bahrain</p>
+          <p><strong>Dates:</strong> Apr 2019 - Feb 2020</p>
+          <p><strong>Grade:</strong> 81.7%</p>
+          <p>A solid foundation in subjects like mathematics, science, and language.</p>
+        </div><br>
+        <div class="card">
+          <h1>PUC (CBSE Class 11 + 12)</h1>
+          <p><strong>School:</strong> The Indian School, Kingdom of Bahrain</p>
+          <p><strong>Dates:</strong> May 2020 - Mar 2022</p>
+          <p><strong>Grade:</strong> 72.3%</p>
+          <p>Focused on science with subjects like physics, chemistry, and mathematics.</p>
+        </div><br>
+        <div class="card">
+          <h1>BCA - Bachelor of Computer Applications</h1>
+          <p><strong>University:</strong> KLE Technological University, Hubballi, India</p>
+          <p><strong>Currently Pursuing</strong> - CGPA: 7.65 (Up to Semester 4)</p>
+          <p>Focused on computer science and software engineering.</p>
+        </div><br>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-heading">
+        <h2>Contact</h2>
+      
+      <center>
+        <div class="social-icons">
+          <a href="https://github.com/ImDedInside-git" target="_blank"><i class="fab fa-github"></i> Github</a>
+          <a href="https://www.linkedin.com/in/savio-alphonso" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:savio.alphonso84@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </div><br></center>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Savio Alphonso. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
