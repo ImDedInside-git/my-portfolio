@@ -5,6 +5,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.monospace-text {
+    font-family: monospace;
+    font-size: 0.8em;
+}
+
 
 body {
   line-height: 1.6;
